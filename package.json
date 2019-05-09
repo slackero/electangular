@@ -1,0 +1,34 @@
+{
+  "name": "@slackero/electangular",
+  "version": "1.0.0",
+  "description": "AngularJS Module for Atom Electron",
+  "main": "electangular.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slackero/electangular.git"
+  },
+  "keywords": [
+    "angularjs",
+    "electron",
+    "angular",
+    "angular-js"
+  ],
+  "author": "develephant",
+  "contributors": [
+    {
+      "name": "Oliver Georgi",
+      "email": "slackero+github@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slackero/electangular/issues"
+  },
+  "homepage": "https://github.com/slackero/electangular#readme"
+}
