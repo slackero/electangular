@@ -1,10 +1,10 @@
-/*
-> electangular.js
-> AngularJS Module for Atom Electron
-> (c)2016 develephant @develephant
-> license MIT
-> version 0.0.2
-*/
+/**
+ * electangular.js
+ * AngularJS Module for Atom Electron
+ * (c) 2016 develephant @develephant
+ * license MIT
+ * version 0.0.3
+ */
 'use strict';
 
 angular.module('electangular', [])
@@ -30,7 +30,8 @@ angular.module('electangular', [])
 }])
 
 .service("electron", ['$q', 'electron_core', function($q, core) {
-  var remote = core.remote;
+  var remote = core.remote,
+      version = parseInt(process.versions.electron.split('.', 1)[0], 10);
   return {
     Accelerator: remote.Accelerator,
     app: remote.app,
@@ -100,7 +101,7 @@ angular.module('electangular', [])
     crashReporter: core.crashReporter,
     nativeImage: core.nativeImage,
     process: core.process,
-    screen: core.screen,
+    screen: version < 5 ? core.screen : remote.screen,
     shell: core.shell,
     ipcRenderer: core.ipcRenderer
   }
