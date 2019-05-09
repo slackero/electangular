@@ -291,4 +291,4 @@ __Contributions always welcome. :)__
 
 ---
 
-electangular.js | AngularJS Module for Atom Electron | &copy;2016 develephant :elephant:
+electangular.js | AngularJS Module for Atom Electron | &copy; 2016-2019 develephant :elephant:
